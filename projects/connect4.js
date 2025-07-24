@@ -74,7 +74,6 @@ function mousePressed() {
 function drawMenu() {
 
     //Draw the menu background
-    background(255);
     drawMenuBackground();
 
     //Draw buttons
@@ -95,7 +94,7 @@ function drawMenu() {
 function drawMenuBackground() {
 
     //Create the background
-    background(255);
+    background(36,41,67);
     drawConnect4Board();
 }
 
@@ -118,6 +117,7 @@ function menuPressed() {
 function drawGame() {
 
     //Draw the board
+    background(36,41,67);
     drawConnect4Board();
 
     //Draw back button

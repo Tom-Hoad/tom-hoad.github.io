@@ -3950,3 +3950,49 @@ input, select, textarea {
 			opacity: 1;
 			visibility: visible;
 		}
+
+/* Sketch holder */
+
+	#sketch-holder {
+        width: 40%; 
+        margin: 0 auto; 
+    }
+    #sketch-holder canvas {
+        width: 100% !important;
+        height: auto !important;
+    }
+
+/* Overriding margins */
+
+	#banner.major .inner {
+		padding-bottom: 1em !important; 
+	}
+
+	#main > * > .inner {
+		padding-top: 0 !important;  
+	}
+
+	#sketch-holder.image.main {
+		margin-top: 0 !important;
+	}
+
+/* Adding javascript logo */
+
+	.js-logo {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    width: 60px;
+    height: 60px;
+    z-index: 2;
+	}
+
+	.js-logo img {
+		width: 100%;
+		height: 100%;
+		object-fit: contain;
+	}
+
+	article {
+		position: relative; 
+	}

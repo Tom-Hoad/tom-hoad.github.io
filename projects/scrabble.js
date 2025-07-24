@@ -34,7 +34,7 @@ function draw() {
 }
 
 function drawGame() {
-  background(255);
+  background(36,41,67);
   drawLayout();
 }
 
