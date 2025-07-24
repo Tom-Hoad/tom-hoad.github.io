@@ -6,13 +6,13 @@
 -->
 <html>
 	<head>
-		<title>Naughts and Crosses</title>
+		<title>Snake</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="../assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.js"></script>
-    	<script src="naughtsCrosses.js"></script>
+    	<script src="snake.js"></script>
 	</head>
 	<body class="is-preload">
 
@@ -41,7 +41,7 @@
 					<section id="banner" class="major">
 						<div class="inner">
 							<header class="major">
-								<h1>Naughts and Crosses</h1>
+								<h1>Snake</h1>
 							</header>
 						</div>
 					</section>
@@ -53,27 +53,28 @@
 						<!-- One -->
 							<section id="one">
 								<div class="inner">
-									<div id="sketch-holder" class="image main">
+									<div id="sketch-holder" class="image main" style="width: 50%; max-width: 900px; margin: 0 auto;">
 										<!-- p5.js sketch will be inserted here -->
 									</div>
-									<p>
-										This is a recreation of the game of naughts and crosses in JavaScript using the p5 library. There is both a 1 and 2-player mode which can be 
-										selected in the menu. The background of the menu is a simulation of a game between 2 players making completely random moves, and it still correctly tracks 
-										who is winning those games.
+									<p> 
+										This is a recreation of the game Snake using JavaScript with the p5 library. This game has a full menu system as well as lots of options to
+										change the player experience. It also saves the high score using local browser storage.
 									</p>
 									<p>
-										The 2-player mode allows 2 players to take turns inputting with the mouse. Each symbol is placed with an animation that somewhat draws out that
-										shape. There is also the option to choose whether the person who goes first is alternating or not. The final feature is the score between the players, 
-										which is kept in the bottom right and gets reset whenever the user goes back to the main menu.
+										The options menu in this was one of the more technical parts, since I hadn't created a multipage option screen before this point. It gives
+										the ability to enable 2-player mode, as well as change things like the grid size and the number of fruits in the grid. It also has individual settings for 
+										each player that let you change the controls as well as the speed and colours.
 									</p>
-									<p>
-										The 1 player mode allows 1-player to play against a bot. This contains the same animation that the 2-player mode does, as well as the ability to choose 
-										whether the bot goes first or second. This bot is made using the min-max algorithm. Unlike Connect 4 (also featured on this site), this game is simple 
-										enough to be able to be fully solved in real-time. After each user moves, the bot will go to the maximum depth to make the most optimal next move. Hence,
-										this game is impossible to win against the AI, who will always force a draw or a win if a win is possible.
+									<p> 
+										The actual gameplay was mostly done using a class for the snake and then storing everything else in a 2D array. The snake increasing in size was possibly
+										the most technical part and maybe the main reason a snake class was needed, but the system worked by simply adding a timer each time a fruit was collected
+										and once that timer was done, it would be at a node at the end of the snake on the fruit as the snake would have fully moved onto the next cell by that point.
+										The other technical part was making the snake move in the way it does, but luckily it ended up being easy with the use of the class. The nice thing about this 
+										system is, theoretically, you could have any number of snakes, which is interesting for online multiplayer, for example, but since this game is played locally it
+										is limited to 2 snakes and even that is hard to have a good control scheme for.
 									</p>
 									<ul class="actions">
-										<li><a href="https://github.com/Tom-Hoad/tom-hoad.github.io/blob/main/projects/naughtsCrosses.js" class="button primary">Code</a></li>
+										<li><a href="https://github.com/Tom-Hoad/tom-hoad.github.io/blob/main/projects/snake.js" class="button primary">Code</a></li>
 									</ul>
 								</div>
 							</section>

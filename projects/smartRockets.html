@@ -56,8 +56,34 @@
 									<div id="sketch-holder" class="image main" style="width: 50%; max-width: 900px; margin: 0 auto;">
 										<!-- p5.js sketch will be inserted here -->
 									</div>
-									<p>This was made using the p5js library. </p>
-									</div>
+									<p>
+										This is a project made in JavaScript using the p5 library. This is a simulation of a genetic algorithm using rockets with a given goal. The rockets can use
+										a thruster to generate a force in any direction. At first, they are all just firing this in random directions, but over time they evolve to get closer to the
+										goal. 
+									</p>
+									<p>
+										The actual rockets themselves are objects equipped with a range of parameters. The main thing that controls their movement is their DNA. This DNA is an array
+										of vectors which is looped through to calculate where they move. In the first generation, this DNA is generated completely randomly, meaning the rockets move in
+										a completely random way as can be seen. After each rocket has finished, it gets a performance score. This performance score is not fully optimised, but it takes into 
+										account the distance to the goal at the end of their journey primarily. It also takes into account if they have crashed and if they have reached the goal,
+										which both give major disadvantages/advantages to their score.
+									</p>
+									<p>
+										The population evolves after each generation. This is done by looking at the performance scores of each rocket. The DNA of all rockets is put into the gene pool, 
+										but the ones with high-performance scores are more likely to be picked out and, hence, it is more likely, their genes will move on. 2 rockets are picked using this 
+										process and then their DNAs are combined by taking a random vector from each for each position which gives a new DNA which is a mix of the 2. This is repeated to create
+										a new generation of the same size as the last, and then this process repeats. The generation number can be seen on the screen, as well as the percentage that finished in 
+										the previous generation.
+									</p>
+									<p>
+										The number of rockets, length of DNA and position of obstacles were all arbitrarily chosen and the ability to change these will be added in the future. The speed of the simulation 
+										can be changed by pressing the mouse. On the fastest setting, you cannot actually see the rockets but can see the generation number and the success rate, and then clicking again will 
+										take you back to normal speed.
+									</p>
+									<ul class="actions">
+										<li><a href="https://github.com/Tom-Hoad/tom-hoad.github.io/blob/main/projects/smartRockets.js" class="button primary">Code</a></li>
+									</ul>
+								</div>
 							</section>
 							
 					</div>

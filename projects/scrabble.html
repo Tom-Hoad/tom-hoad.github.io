@@ -56,8 +56,34 @@
 									<div id="sketch-holder" class="image main" style="width: 60%; max-width: 900px; margin: 0 auto;">
 										<!-- p5.js sketch will be inserted here -->
 									</div>
-									<p>This was made using the p5js library.</p>
-									</div>
+									<p>
+										This was one of my first large-scale projects. This is the game of Scrabble created in JavaScript using the p5 library. The game of Scrabble involves
+										2 players play against each other to build words which gain a score and when there are no letters left or no one can go with the few letters left, then
+										the game ends.
+									</p>
+									<p>
+										One of the main difficulties of this project was just creating a UI that was nice to look at and usable. Using pure JavaScript makes creating these things
+										fairly difficult, and in this case, a combination of lots of arrays and 2D arrays work together to create the board as well as the hands. The board
+										is actually created using 2 different arrays in parallel, with one keeping track of the type of tile (double letter, triple word, ...) and the other keeping
+										track of the actual letter on that spot.
+									</p>
+									<p> 
+										The scoring system was also a very difficult system to set up for this one due to the ability to massively crosswords across others. It ended up being a very 
+										complicated combination of for loops that were used to find all the words that a player should get points for after their turn and then those were all passed into 
+										a function and summed to get the total score for that turn. It is still not possible to place 1 tile as the scoring system for that has not been implemented yet, 
+										however, it will be soon as it is actually a simpler system than not placing a single letter.
+									</p>
+									<p>
+										This game gives a few options on the side as well as the ability to select letters. The toggle letters button just makes the letters invisible so you can see
+										the score that the tile underneath them gives, and that can be toggled on and off. The end turn button will end a player's turn if they have played a valid word. 
+										This will check for whether a word is in a valid position, however it will not actually check if the word is a real word and hence the players should do that themselves.
+										The clear button removes tiles played in this turn. This can only be used if the player doesn't currently have a tile selected (in which case just place it down and then
+										clear). Finally, the player can click a tile to pick it up and click a spot on the board to place it.
+									</p>
+									<ul class="actions">
+										<li><a href="https://github.com/Tom-Hoad/tom-hoad.github.io/blob/main/projects/scrabble.js" class="button primary">Code</a></li>
+									</ul>
+								</div>
 							</section>
 
 					</div>

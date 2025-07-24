@@ -56,8 +56,25 @@
 									<div id="sketch-holder" class="image main">
 										<!-- p5.js sketch will be inserted here -->
 									</div>
-									<p>This was made using the p5js library. </p>
-									</div>
+									<p class="mb-4">
+										This connect 4 project contains the game of connect 4, created in JavaScript with the use of the library p5.
+									</p>
+									<p>
+										The 2 Player mode allows you to control both players with the mouse. It will end the game once a player gets 4 in a row. 
+										There is also the ability to keep track of the scores as well as choose who goes first. By default, it will alternate the starting player.
+									</p>
+									<p> 
+										The 1 Player mode has the same features as the 2 Player mode, however it only lets you control 1 of the players. This makes use of a min-max algorithm 
+										on the game to choose a spot for the bot. You can select how deep this algorithm will look, and it will calculate what it thinks is the best move to 
+										maximise its winning chances. This bot has to evaluate positions on the board, which it does in a fairly simple way. The way it does this is by simply counting the 
+										number of triples that it has and the number the opponent has. I did account for the triples having to be finishable (3 yellows in a row with a red on either side is 
+										not useful) and it takes wins when it can. However, this is not the perfect evaluation function and this is a solved game, so potentially 
+										all the bot's moves could be precalculated, but as a fairly simple bot that runs in real time, it does surprisingly well.
+									</p>
+									<ul class="actions">
+										<li><a href="https://github.com/Tom-Hoad/tom-hoad.github.io/blob/main/projects/connect4.js" class="button primary">Code</a></li>
+									</ul>
+								</div>
 							</section>
 
 					</div>
