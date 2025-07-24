@@ -4001,16 +4001,31 @@ input, select, textarea {
     position: absolute !important;
     bottom: 15px !important;
     right: 15px !important;
-    width: 30px !important;
-    height: 30px !important;
+    width: 60px !important;
+    height: 60px !important;
     margin: 0 !important;
     padding: 0 !important;
     z-index: 1 !important;
-}
+	}
 
-.tiles article .js-logo img {
-    width: 100% !important;
-    height: 100% !important;
-    object-fit: contain !important;
-    filter: drop-shadow(0 0 2px rgba(0,0,0,0.5));
-}
+	.tiles article .js-logo img {
+		width: 100% !important;
+		height: 100% !important;
+		object-fit: contain !important;
+		filter: drop-shadow(0 0 2px rgba(0,0,0,0.5));
+	}
+
+/* Fixing mobile issues */
+
+	@media screen and (max-width: 736px) {
+		#banner .major h1 {
+			font-size: 2rem !important; /* Larger base size */
+			line-height: 1.2 !important;
+			word-break: keep-all !important; /* Prevent word breaks */
+			white-space: normal !important; /* Allow normal wrapping */
+		}
+		
+		#banner .content p {
+			margin-top: 0.5em !important; /* Reduce spacing */
+		}
+	}
