@@ -3979,12 +3979,12 @@ input, select, textarea {
 /* Adding javascript logo */
 
 	.js-logo {
-    position: absolute;
-    bottom: 15px;
-    right: 15px;
-    width: 60px;
-    height: 60px;
-    z-index: 2;
+		position: absolute;
+		bottom: 15px;
+		right: 15px;
+		width: 60px;
+		height: 60px;
+		z-index: 2;
 	}
 
 	.js-logo img {
@@ -3996,3 +3996,21 @@ input, select, textarea {
 	article {
 		position: relative; 
 	}
+
+	.tiles article .js-logo {
+    position: absolute !important;
+    bottom: 15px !important;
+    right: 15px !important;
+    width: 30px !important;
+    height: 30px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    z-index: 1 !important;
+}
+
+.tiles article .js-logo img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: contain !important;
+    filter: drop-shadow(0 0 2px rgba(0,0,0,0.5));
+}
