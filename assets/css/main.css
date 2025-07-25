@@ -4029,3 +4029,9 @@ input, select, textarea {
 			margin-top: 0.5em !important; /* Reduce spacing */
 		}
 	}
+
+/* Fix spacing on f1 quali screen */
+
+#race {
+    margin-bottom: 50px; 
+}
